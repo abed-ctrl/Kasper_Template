@@ -1,0 +1,65 @@
+1- Font : Open Sans (font-weight : 400 + 700)
+2- Libraries :
+    - Font Awesome V6
+    - Normalize V8
+3- Main Css Style File
+4- Global Variables
+    - main-color: #19c8fa
+    - main-transition: 0.5s
+5- Global Rules:
+    - * 
+        - box-sizing (prefixes) : border-box
+        - padding : 0
+        - Margin : 0
+    - html
+        - scroll-behavior : smooth
+    - body
+        - font-family : Your font
+    - ul
+        - list-style : none
+    - a
+        - text-decoration : none
+    - container
+    - media screen of container
+6- Header (is a part of landing section) (position: absolute)
+    - logo : a.logo => image
+    - nav : (ul => li => a{first.active}) * 6 + div.form => i
+
+    - container : flex; position : relative;
+    - bar under header => container after
+    - nav : flex = 1 => display flex
+    - nav => a => white + 14px + transition + block + padding
+    - nav => form => 40/30 + border-left + margin-left + relative
+    - nav => form => absolute + white + right0 + top50% + translateY-50%
+    - add toggle icon html => i.toogle-menu
+    - add media of toggle-menu
+    - header position absolute
+
+7- landing (Full-Screen no container)
+    - overlay : .overlay
+    - text : .text => .content => h2 + p
+
+    - landing : 100vh + bg-color + bg-image + relative + bg-size : cover
+    - overlay : absolute + top0 + left0 + width100% + height100% + bg-color: rgb(0 0 0 / 50%)
+    - text : absolute + left0 + top50% + translateY-50% + padding50px + white + bg-color(--transparent-color) + flex + justify-content:flex-end => new var --transparent-color: rgb(15 116 143 / 70%);
+    - content : max-width: 500px
+    - h2 : 32px + weight:normal + height:1.5 + margin-bot:20px
+    - p : 14px + height:2 
+
+    - in the bottom of landing add :
+        - i => .fas .fa-angle-left .navigation-background left-angle fa-2x
+        - i => .fas .fa-angle-right .navigation-background right-angle fa-2x
+        - ul.bullets => li*3{li2.active}
+    
+    - .navigation-background : absolute + top50% + translateY-50% + white
+    - .left-angle : left30px
+    - .right-angle : right30px
+    - .bullets : absolute + bottom30px + left50% + translateX-50% + width80px + flex + justify-content:space-between 
+    - .bullets li : width20 + height20 + border1px + border-radius50%
+    - .bullets li.active : background-color:main-color + border-color:main-color
+
+    - media screen Mobile max-width: 767px
+    - .text : width100%
+    - .content : max-width100%
+
+
